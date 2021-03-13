@@ -1,7 +1,7 @@
 .first {
   font-size: 40px;
   font-weight: bold;
-  
+
 }
 h2 {
   color: rgb(255, 0, 0);
@@ -68,4 +68,11 @@ a:hover, a:active {
   background-color: red;
   color: black;
   
+}
+img {
+
+  max-width: 100%;
+
+  height: auto;
+
 }
