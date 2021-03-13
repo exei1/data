@@ -69,24 +69,34 @@ a:hover, a:active {
   color: black;
   
 }
-img {
+#gallery {
+  -moz-user-select: none; user-select: none;
+}
+#gallery img {
+  max-width: 200px;
+  max-height: 150px;
+  cursor: zoom-in;
+}
+#gallery img:focus {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  z-index: 31;
   max-width: 100%;
-  height: auto;
+  max-height: 100%;
+  outline: none;
+  pointer-events: none;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  -moz-user-select: none; user-select: none;
 }
-@media  screen and (min-width: 525px) {
-  .header-pc {
-    display: block
-  }
-  .header-mobile {
-    display: none
-  }
-}
-
-@media  screen and (max-width: 525px) {
-  .header-pc {
-    display: none
-  }
-  .header-mobile {
-    display: block
-  }
+#gallery img:focus ~ div {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 30;
+  background: rgba(240,240,240,.9);
+  cursor: zoom-out;
 }
