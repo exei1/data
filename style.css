@@ -1,5 +1,7 @@
 .first {
   font-size: 40px;
+  font-weight: bold;
+  
 }
 h2 {
   color: rgb(255, 0, 0);
@@ -24,21 +26,46 @@ h2 {
 .dsa {
   color: blueviolet;
   font-size: 30px;
-  width: 200px;
+  font-family: fantasy;
+  font-style: oblique;
+  border: 10px black;
 }
 .a {
-  color: crimson;
+  color: blue;
   font-size: 20px;
+  font-style: italic;
 }
 .s {
-  color: rgb(64, 74, 136);
+  color: rgb(0, 25, 185);
   font-size: 20px;
+  font-style: italic;
 }
 .d {
   color: blue;
   font-size: 20px;
+  font-style: italic;
 }
 .q {
   font-size: 20px;
-  color: khaki;
+  color: blue;
+  font-style: italic;
+}
+header li {
+  list-style: none;
+}
+a:link, a:visited {
+  text-decoration: none;
+  background-color: rgb(0, 238, 255);
+  border: black 1px;
+  color: black;
+  display: block;
+  width: 200px;
+  text-align: center;
+  margin-bottom: 1px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; 
+}
+a:hover, a:active {
+  background-color: red;
+  color: black;
+  
 }
