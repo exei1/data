@@ -90,8 +90,7 @@ a:hover, a:active {
   transform: translate(-50%, -50%);
   -moz-user-select: none; user-select: none;
 }
-#gallery img:focus ~ div {
-  position: fixed;
+#gallery img:hover ~ div {
   top: 0;
   left: 0;
   right: 0;
@@ -99,4 +98,19 @@ a:hover, a:active {
   z-index: 30;
   background: rgba(240,240,240,.9);
   cursor: zoom-out;
+}
+#gallery {
+  display: inline-block;
+  overflow: hove; 
+}
+#gallery img {
+  transition: 1s; 
+  display: block;
+}
+#gallery img:hover {
+  transform: scale(1,2);
+}
+#gallery{
+  display: flex;
+  justify-content: flex-end;
 }
