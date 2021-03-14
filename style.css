@@ -110,7 +110,8 @@ a:hover, a:active {
 #gallery img:hover {
   transform: scale(1.2);
 }
-#gallery{
+#gallery {
   display: flex;
   justify-content: flex-end;
+  position: absolute;
 }
