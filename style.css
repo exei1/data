@@ -101,7 +101,7 @@ a:hover, a:active {
 }
 #gallery {
   display: inline-block;
-  overflow: hove; 
+  overflow: hidden; 
 }
 #gallery img {
   transition: 1s; 
